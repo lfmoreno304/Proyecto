@@ -1,0 +1,31 @@
+<body>
+    <div class="modal-dialog text-center">
+        <div class="col-sm-8 main-section">
+            <div class="modal-content">
+                <br>
+                <div class="col-12 user-img">
+
+                </div>
+                <form class="col-12">
+                    <div class="form-group">
+                        <input type="text" name="email" class="form-control" [(ngModel)]="cliente.email"  placeholder="Ingrese su correo">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="contrasena" class="form-control" [(ngModel)]="cliente.contrasena"  placeholder="Ingrese su contraseña">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="nombre" class="form-control" [(ngModel)]="cliente.nombre" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="identificacion"  class="form-control" [(ngModel)]="cliente.identificacion"  placeholder="Ingrese su identificacion">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="telefono" class="form-control" [(ngModel)]="cliente.telefono"  placeholder="Ingrese su telefono">
+                    </div>
+                    <button type="submit" class="btn" (click)="Registrar()"><i class="fas fa-sign-in-alt"></i>Registrar</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
